@@ -16,6 +16,8 @@ fn binary_search(search_val: i32, list: Vec<i32>) -> i32 {
             return mid_index as i32;
         }
 
+        // if we're at 0 for our mid index and it wasn't the guess
+        // then we know that it didn't find the target
         if mid_index == 0 {
             return -1;
         }
